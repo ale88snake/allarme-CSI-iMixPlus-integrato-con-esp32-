@@ -2,49 +2,108 @@
 
 ## Descrizione
 
-Progetto personale che dimostra la possibilità di integrare la centrale **CSI iMixPlus** con un **ESP32-S3 Zero**, estendendone le funzionalità e consentendone l'integrazione con sistemi di domotica e automazione.
+Progetto personale sviluppato su **ESP32-S3 Zero** che permette di integrare la centrale **CSI iMixPlus** con i più diffusi sistemi di domotica, mantenendo il pieno controllo della centrale sia in rete locale che da remoto.
 
-Il progetto è stato sviluppato esclusivamente a scopo di interoperabilità, ricerca e sperimentazione tecnica.
+Il firmware è stato sviluppato interamente da zero ed è frutto di un lungo lavoro di progettazione, sviluppo e test.
 
-## Funzionalità implementate
+> **Questo repository ha il solo scopo di presentare il progetto.**
+>
+> Non contiene firmware, codice sorgente, librerie proprietarie, chiavi crittografiche o materiale appartenente a terzi.
 
-* ✅ Controllo completo della centrale tramite **Home Assistant**.
-* ✅ Controllo diretto tramite **Amazon Alexa**, anche senza Home Assistant.
-* ✅ Integrazione tramite **MQTT**.
-* ✅ Connessione alla centrale tramite rete locale (IP).
-* ✅ Connessione remota tramite Cloud.
-* ✅ Comunicazione diretta tramite bus **RS485**.
-* ✅ Aggiornamento in tempo reale dello stato della centrale.
-* ✅ Monitoraggio in tempo reale degli ingressi.
-* ✅ Visualizzazione della tensione (mV) di ogni ingresso configurato.
-* ✅ Gestione di tutti i gruppi programmati.
-* ✅ Gestione delle uscite della centrale.
-* ✅ Possibilità di personalizzare nomi di gruppi, ingressi e uscite.
-* ✅ Connessione automatica dell'ESP32 alla rete Wi-Fi e comunicazione con la centrale.
-* ✅ Aggiornamento firmware OTA (Over-The-Air).
-* ✅ Architettura basata su ESP32-S3 Zero con firmware sviluppato interamente da zero.
+---
 
-## Stato del progetto
+# Caratteristiche
 
-Il progetto è perfettamente funzionante e continua ad evolversi con nuove funzionalità e miglioramenti.
+### Controllo della centrale
 
-## Nota importante
+* ✅ Inserimento e disinserimento dei gruppi
+* ✅ Controllo completo delle uscite programmabili
+* ✅ Visualizzazione dello stato della centrale in tempo reale
+* ✅ Stato di inserimento aggiornato automaticamente
+* ✅ Gestione di gruppi multipli
 
-Questo repository ha il solo scopo di presentare il progetto.
+---
 
-**Non contiene:**
+### Monitoraggio
 
-* il firmware sviluppato;
-* il codice sorgente;
-* firmware originali della centrale;
-* chiavi crittografiche;
-* materiale proprietario;
-* procedure finalizzate ad aggirare sistemi di protezione.
+* ✅ Stato in tempo reale di tutti gli ingressi
+* ✅ Valori analogici di ogni ingresso espressi in mV
+* ✅ Rilevazione immediata delle variazioni di stato
+* ✅ Monitoraggio continuo della centrale
 
-## Disclaimer
+---
 
-Questo progetto è indipendente e **non è affiliato, approvato o supportato da Centro Sicurezza Italia (CSI)**.
+### Domotica
 
-I nomi **CSI** e **iMixPlus** appartengono ai rispettivi proprietari e sono utilizzati esclusivamente a scopo identificativo per indicare la compatibilità del progetto.
+* ✅ Integrazione completa con **Home Assistant**
+* ✅ Auto-discovery tramite **MQTT Discovery**
+* ✅ Sensori, switch e pulsanti creati automaticamente
+* ✅ Compatibile con dashboard personalizzate
+* ✅ Automazioni native di Home Assistant
 
-Tutti i diritti relativi ai marchi appartengono ai rispettivi titolari.
+---
+
+### Amazon Alexa
+
+* ✅ Controllo diretto tramite **Amazon Alexa**
+* ✅ Funzionamento anche senza Home Assistant
+* ✅ Riconoscimento automatico dei dispositivi
+* ✅ Possibilità di controllare gruppi e uscite tramite comandi vocali
+
+---
+
+### Connettività
+
+* ✅ Connessione tramite rete locale
+* ✅ Connessione tramite Cloud
+* ✅ Riconnessione automatica
+* ✅ Gestione automatica della connessione più veloce disponibile
+
+---
+
+### Configurazione
+
+* ✅ Configurazione completamente via Web
+* ✅ Personalizzazione dei nomi di gruppi, ingressi e uscite
+* ✅ Gestione Wi-Fi
+* ✅ Configurazione MQTT
+* ✅ Configurazione Cloud
+* ✅ Configurazione Home Assistant
+* ✅ Configurazione Alexa
+
+---
+
+### Firmware
+
+* ✅ Aggiornamento OTA (Over-The-Air)
+* ✅ ESP32-S3 Zero
+* ✅ Interfaccia Web responsive
+* ✅ Sistema modulare
+* ✅ Watchdog di sicurezza
+* ✅ Diagnostica integrata
+* ✅ Log di funzionamento
+* ✅ Gestione automatica degli errori
+
+---
+
+# Obiettivo del progetto
+
+L'obiettivo è dimostrare come una centrale **CSI iMixPlus** possa essere integrata in un moderno ecosistema di domotica mantenendo un'esperienza d'uso semplice, affidabile e veloce.
+
+---
+
+# Stato del progetto
+
+🟢 **Sviluppo attivo**
+
+Il progetto è pienamente funzionante e viene costantemente migliorato con nuove funzionalità.
+
+---
+
+# Disclaimer
+
+Questo repository è esclusivamente dimostrativo e non contiene il firmware sviluppato né il codice sorgente.
+
+Il progetto è indipendente e non è affiliato, approvato o supportato da **Centro Sicurezza Italia (CSI)**.
+
+I marchi **CSI** e **iMixPlus** appartengono ai rispettivi proprietari e sono citati esclusivamente per indicare la compatibilità del progetto.
